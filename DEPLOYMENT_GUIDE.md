@@ -62,7 +62,7 @@ On the configuration page, enter the following details:
 - **Root Directory**: Leave blank
 - **Environment**: `Python 3`
 - **Build Command**: `./build.sh`
-- **Start Command**: `cd backend && gunicorn -b 0.0.0.0:$PORT app:create_app()`
+- **Start Command**: `cd backend && gunicorn -b 0.0.0.0:$PORT wsgi:app`
 
 **Advanced Settings** (click "Advanced"):
 
